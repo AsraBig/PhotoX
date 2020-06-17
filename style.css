@@ -1,0 +1,322 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('images/header-img.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .4s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*----------navbar--------------*/
+
+.nav-menu {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.6));
+    padding: 25px;
+}
+
+.menu-item {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee; 
+    
+}
+
+.menu-item a {
+    color: #eee; 
+    transition: all .3s;
+   
+}
+.menu-item a:hover {
+    color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .6s;
+}
+
+.nav-active a {
+    color: #70aed2;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.9));
+}
+
+/*mission*/
+.mission {
+    background-color: #151f20;
+}
+
+.underline {
+    border: 3px solid #eee;
+    width: 150px;
+    margin: auto;
+}
+
+.fromLeft {
+    animation-name: fromLeft;
+    animation-duration: 2s;
+}
+
+.fromRight {
+    animation-name: fromRight;
+    animation-duration: 2s;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* collection */
+.card-shadow {
+    box-shadow: 5px 30px 20px #444;
+}
+
+.heading {
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    opacity: 0.6;
+    right: 0;
+    background-color: #222;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.heading:hover {
+    opacity: 1;
+}
+
+/* Gallery */
+.underline-dark {
+    border: 3px solid #888;
+    width: 150px;
+    margin: auto;
+}
+
+.gallery-list-item {
+    cursor: pointer;
+    color: #777;
+    user-select: none;
+}
+
+.active-item {
+    color: #206e9b;
+}
+
+/* customers  */
+.customer-section {
+    background: #151f20;
+}
+
+/* card or join */
+.card-1, .card-2, .card-3 {
+    background-image:  linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,0.5)), url('images/pricing-card-bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 7px 18px 50px #555;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+.card-list-item {
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto;
+}
+
+.price-card-button {
+    background-color: rgb(226, 135, 15);
+    box-shadow: 5px 5px 18px #000;
+    border-radius: 17px;
+    transition: all 0.5s;
+}
+
+.price-card-button:hover {
+    background-color:  rgb(104, 12, 146);
+    transform: translateY(-3px);
+}
+
+.fromRightCard {
+    animation-name: fromRightCard;
+    animation-duration: 2s;
+}
+
+.fromLeftCard {
+    animation-name: fromLeftCard;
+    animation-duration: 2s;
+}
+
+.fromButtonCard {
+    animation-name: fromButtonCard;
+    animation-duration: 2s;
+}
+
+@keyframes fromRightCard {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromLeftCard {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromButtonCard {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* contact */
+
+.contact {
+    background: linear-gradient(105deg, rgba(21,31,32,1) 0%, rgba(21,31,32, .95) 50%, transparent 50%), url("images/form-img.jpeg") center center no-repeat;
+}
+
+.input-contant {
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px solid #eee;
+    border-radius: 0;
+    transition: all 0.4s;
+}
+
+.input-contant:focus {
+    background: transparent;
+    border-bottom: 2px solid rgb(233, 93, 93);
+    box-shadow: none;
+}
+
+.submit-button {
+    background-color: rgb(248, 160, 60);
+    color: #eee;
+    transition: all 0.5s;
+}
+
+.submit-button:hover {
+    background-color: rgb(241, 30, 30);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 992px){
+    .contact {
+        background:  linear-gradient(rgba(21,31,32,1) 0%, rgba(21,31,32, .95) 50%);
+    }
+
+    .contact-form {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* footer */
+
+.footer-link {
+    color: #eee;
+    font-size: 13px;
+    transition: all 0.3s;
+}
+
+
+.footer-link-2 {
+    color: #eee;
+    transition: all 0.3s;
+}
+
+
+.footer-link:hover,
+.footer-link-2:hover {
+    color: rgb(243, 81, 81);
+    text-decoration: none;
+}
+
+.ac-list {
+    cursor: pointer;
+}
